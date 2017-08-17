@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--多选的布局:由于不确定有多少选项，用列表来做-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/radio_or_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_12"
+            android:background="@drawable/rect_do_exam"
+            android:padding="4dp"
+            android:text="多选"
+            android:textColor="#00A77C"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/questi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/radio_or_multi"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/margin_20"
+        android:id="@+id/muti_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+
+        android:layout_below="@id/muti_rec"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/margin_12">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="正确答案："
+            android:textColor="#717171" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/a"
+            android:text="X"
+            android:textColor="#60C6AA" />
+    </RelativeLayout>
+
+
+</LinearLayout>

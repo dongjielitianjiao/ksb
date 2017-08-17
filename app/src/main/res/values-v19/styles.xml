@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--系统栏颜色-->
+        <item name="colorPrimaryDark">@color/apptheme1</item>
+        <!-- 输入Edittext颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--照片选择弹起框仿iOS7-->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+</resources>

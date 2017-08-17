@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_certif_step_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.getcertificate.GetCertifStepTwoActivity">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/cf_type"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color_8c"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="证件类型："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cfr_type_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/cf_type"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/cf_num"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color_8c"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="证件号码："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cfr_num_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/cf_num"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color_8c"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="姓名："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cfr_name_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/name"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/recv_goods_msg"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color_8c"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="收货信息："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cfr_recv_goods_msg_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/recv_goods_msg"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/pirce"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color_8c"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="价格："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cfr_pirce_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/pirce"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/color_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pay_choose_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="280dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/color_white"
+        android:layout_height="wrap_content"
+        android:background="@drawable/next_step_shape"
+        android:text="支付领证费用"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+</LinearLayout>

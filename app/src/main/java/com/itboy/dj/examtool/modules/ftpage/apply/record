@@ -1,0 +1,54 @@
+     /*  RetrofitService.getKaopei(map, token).compose(this.<KaopeiFirstBean>bindToLife()).subscribe(new Subscriber<KaopeiFirstBean>() {
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(KaopeiFirstBean kaopeiFirstBean) {
+                data = kaopeiFirstBean.getData();
+                int size = data.size();
+                GradeGroup gradeGroup = null;
+                for (int i = 0; i < size; i++) {
+                    gradeGroup = new GradeGroup(data.get(i).getExamName(), data.get(i).getExamId() + "", false, classListItems);
+                    groupData.add(gradeGroup);
+                }
+                expandableAdapter = new ExpandableAdapter(KaoPeiFixActivity.this, groupData);
+                contentView.setAdapter(expandableAdapter);
+                contentView.setGroupIndicator(null);
+                //以及监听
+                contentView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+                    @Override
+                    public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+                        List<ClassListItem> childData = new ArrayList<>();
+                        String examID = groupData.get(groupPosition).getId() + "";
+                        getChildData(examID, childData);     //获取子菜单数据
+
+                        groupData.get(groupPosition).addchilddata(childData);   //加载子菜单数据
+                        if (groupData.get(groupPosition).checked) {
+                            for (int j = 0; j < groupData.get(groupPosition).children.size(); j++)
+                                groupData.get(groupPosition).children.get(j).checked = true;
+                        }
+
+                        return false;
+                    }
+                });
+                contentView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+                    @Override
+                    public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+
+                        Toast.makeText(KaoPeiFixActivity.this, groupData.get(groupPosition).children.get(childPosition).getTitle(), Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+
+            }
+
+            @Override
+            public void onCompleted() {
+
+
+            }
+
+
+        });*/

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.itboy.dj.examtool.modules.communion.ForumFragment">
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/push_forum"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/ro_write_forum"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_16"
+        android:background="@mipmap/j_ic_xiepinglun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/forum_rec"
+    android:layout_above="@id/push_forum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

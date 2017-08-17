@@ -1,0 +1,235 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.antfortune.freeline'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    //Rxjava1 和 Rxjava2 冲突
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    defaultConfig {
+        applicationId "com.itboy.dj.examtool"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        //方法数超过65535
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库（不需要的删除即可）。其实可以只设置 abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.itboy.dj.examtool",
+                JPUSH_APPKEY : "34c01a55ebd98e548cc0d46b", //JPush上注册的包名对应的appkey（*换成你的*）
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+/*解决错误
+    * 错误Conflict with dependency 'com.google.code.findbugs:jsr305'*/
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.itboy.dj.examtool.local'
+        targetGenDir 'src/main/java'
+    }
+
+    freeline {
+        hack true
+    }
+
+}
+
+dependencies {
+
+    //
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(path: ':library1')
+    //支付和定位
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    compile files('libs/android-support-v4.jar')
+    compile files('libs/alipaySdk-20170309.jar')
+    /*    //支付和定位
+                            compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+                            compile files('libs/android-support-v4.jar')
+                            compile files('libs/alipaySdk-20170309.jar')
+
+                            //w系统自带的
+                            compile 'com.android.support:appcompat-v7:25.3.1'
+                            compile 'com.android.support:recyclerview-v7:25.3.1'
+                            compile 'com.android.support:cardview-v7:25.3.1'
+                            compile 'com.android.support:support-v4:25.3.1'
+
+                            //id find 注解库
+                            compile 'com.jakewharton:butterknife:8.2.1'
+                            apt 'com.jakewharton:butterknife-compiler:8.2.1'
+                            //rx 辅助库
+                            compile 'io.reactivex:rxjava:1.1.9'
+                            compile 'io.reactivex:rxandroid:1.2.1'
+                            compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+                            compile 'com.trello:rxlifecycle:1.0'
+                            compile 'com.trello:rxlifecycle-components:1.0'
+                            compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
+                            //注解库
+                            compile 'com.google.dagger:dagger:2.6'
+
+                          apt 'com.google.dagger:dagger-compiler:2.6'
+                        //retrofit+rexjava 网路请求
+                            compile 'com.squareup.retrofit2:retrofit:2.1.0'
+                            compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+                            compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+                            compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+                            //日志打印
+                            compile 'com.orhanobut:logger:1.15'
+
+                            //数据库
+                            compile 'org.greenrobot:greendao:3.1.0'
+                            //特别好用圆形图片
+                            compile 'de.hdodenhof:circleimageview:2.1.0'
+                            //图片加载
+                            compile 'com.github.bumptech.glide:glide:3.7.0'
+                            //按钮点击效果
+                            compile 'tk.zielony:carbon:0.13.0'
+                            //dialog
+                            compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+                            //控件动画
+                            compile 'com.github.ybq:Android-SpinKit:1.1.0'
+
+                            compile 'com.daimajia.slider:library:1.1.5'
+                            //recyclerview万能适配器
+                            compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.0'
+                            //listview和gridview万能适配器
+                            compile 'com.zhy:base-adapter:3.0.3'
+                            //广告轮训
+                            compile 'com.bigkoo:convenientbanner:2.0.5'
+
+                        //拍照
+
+                        //compile 'cn.finalteam.rxgalleryfinal:library:1.0.3'
+                            compile 'cn.finalteam.rxgalleryfinal:library:0.0.9'
+
+                            //弹窗
+                            compile 'com.baoyz.actionsheet:library:1.1.7'
+                            //切换按钮
+                            compile 'com.kyleduo.switchbutton:library:1.4.4'
+                            //倒计时
+                            compile 'com.github.Rukey7:TagLayout:1.0.3'
+                            //极光推送
+                            compile 'cn.jiguang.sdk:jpush:3.0.3'
+                            compile 'cn.jiguang.sdk:jcore:1.1.1'
+                            //播放器
+                            compile 'com.github.CarGuo:GSYVideoPlayer:v1.6.3'
+                            //城市选择
+                            compile 'me.yokeyword:indexablerecyclerview:1.2.3'
+
+                            testCompile 'junit:junit:4.12'
+                            //检测内存泄漏
+                            debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+                            releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+                            //仿微信点击拍照 长按录制视频
+                        compile 'cjt.library.wheel:camera:1.1.1'
+                            //仿微信上传图片
+                           compile 'com.github.yaozs:ImageShowPicker:1.0.0'
+                           //扫码
+                           //compile 'com.journeyapps:zxing-android-embedded:3.5.0'
+                           //最好用的权限处理框架（针对6.0以上）
+                             compile 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+                             //步骤指示器
+                             compile 'com.github.baoyachi:StepView:1.9'
+                             //滑动删除
+                             compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+                             //选择器（包含省市区三级选择）
+                             compile 'com.contrarywind:Android-PickerView:3.2.5'
+                            */
+    //compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
+    //   compile 'cn.finalteam.rxgalleryfinal:library:1.0.7'
+    // compile 'com.github.yaozs:ImageShowPicker:1.0.0'
+    compile files('libs/classes.jar')
+    compile files('build/intermediates/exploded-aar/com.edmodo/cropper/1.0.1/jars/classes.jar')
+    compile files('libs/MobCommons-2017.0608.1618.jar')
+    compile files('libs/MobTools-2017.0608.1618.jar')
+    compile files('libs/ShareSDK-Core-3.0.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.0.0.jar')
+    compile files('libs/ShareSDK-QQ-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-3.0.0.jar')
+    compile files('libs/ShareSDK-QZone-3.0.0.jar')
+
+
+
+
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile 'io.reactivex:rxjava:1.1.9'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.trello:rxlifecycle:1.0'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    compile 'com.google.dagger:dagger:2.6'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'org.greenrobot:greendao:3.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'tk.zielony:carbon:0.13.0'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    compile 'com.daimajia.slider:library:1.1.5'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.0'
+    compile 'com.zhy:base-adapter:3.0.3'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'cn.finalteam.rxgalleryfinal:library:1.0.8'
+    compile 'com.baoyz.actionsheet:library:1.1.7'
+    compile 'com.kyleduo.switchbutton:library:1.4.4'
+    compile 'com.github.Rukey7:TagLayout:1.0.3'
+    compile 'cn.jiguang.sdk:jpush:3.0.3'
+    compile 'cn.jiguang.sdk:jcore:1.1.1'
+    compile 'com.github.CarGuo:GSYVideoPlayer:v1.6.3'
+    compile 'me.yokeyword:indexablerecyclerview:1.2.3'
+    compile 'com.github.baoyachi:StepView:1.9'
+    compile 'com.journeyapps:zxing-android-embedded:3.5.0'
+
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.antfortune.freeline:runtime-no-op:0.8.3'
+
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    apt 'com.google.dagger:dagger-compiler:2.6'
+
+    debugCompile 'com.antfortune.freeline:runtime:0.8.3'
+
+    releaseCompile 'com.antfortune.freeline:runtime-no-op:0.8.3'
+    /*6.0后权限处理*/
+    compile('com.github.hotchemi:permissionsdispatcher:2.4.0')
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+}

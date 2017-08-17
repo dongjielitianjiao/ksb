@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/collect_head_img"
+        android:layout_width="@dimen/margin_60"
+        android:layout_height="@dimen/margin_60"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_toLeftOf="@id/arrow"
+        android:src="@mipmap/b_bg"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/collect_head_img">
+        <TextView
+            android:id="@+id/type"
+            android:text="土木建筑"
+            android:padding="@dimen/margin_2"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:layout_width="70dp"
+            android:textSize="@dimen/text_size_15"
+            android:background="@drawable/rectrg"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--发帖人-->
+            <TextView
+                android:id="@+id/collect_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="奋斗的小弟"
+                android:textColor="@color/dark_666"
+                android:textSize="15sp" />
+            <!--帖子标题-->
+            <TextView
+                android:id="@+id/collect_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:maxLines="2"
+                android:text="如何免费获取一个住房？"
+                android:textSize="@dimen/text_size_18" />
+            <!--帖子内容-->
+            <TextView
+                android:id="@+id/collect_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="如何免费获取一个住房如何免费获取一个住房如何免费获取一个住房如何免费获取一个住房如何免费获取一个住房如何免费获取一个住房"
+                android:textSize="@dimen/text_size_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/forum_img21"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/l_bg_wodeshouyi" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="@dimen/margin_10"
+                    android:layout_height="120dp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/forum_img22"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/l_bg_wodeshouyi" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--点赞和查看人数固定在地步-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/text"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5">
+
+            <ImageView
+                android:id="@+id/sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_shoucangshu" />
+
+            <TextView
+                android:id="@+id/collect_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_toRightOf="@id/sc"
+                android:text="520" />
+
+            <ImageView
+
+                android:id="@+id/aw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_toRightOf="@id/collect_number"
+                android:src="@mipmap/j_ic_pinglunshu" />
+
+            <TextView
+                android:id="@+id/comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_toRightOf="@id/aw"
+                android:text="250" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2017-05-12" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

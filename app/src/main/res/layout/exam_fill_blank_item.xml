@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="50dp">
+
+<!--    <TextView
+        android:id="@+id/jg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="答案1："
+        android:textSize="15sp"
+        />-->
+    <EditText
+        android:layout_marginRight="@dimen/margin_12"
+        android:id="@+id/jg_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="颜虎是sb"
+        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/margin_12"
+        />
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weiquan_and_zixun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.legalprotect.WeiquanAndZixunActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="维权/咨询"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+        <RelativeLayout
+            android:id="@+id/right_rt"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/push_btn"
+                android:gravity="center"
+                android:padding="@dimen/margin_6"
+                android:text="提交"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_15" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group_wq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/weiquan"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_6"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_weiquan"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="我要维权"
+            android:textColor="@color/tab_selector_tv_color" />
+
+        <RadioButton
+            android:id="@+id/zixun"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_weiquan"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我要咨询"
+            android:textColor="@color/tab_selector_tv_color" />
+
+    </RadioGroup>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:paddingLeft="@dimen/margin_12"
+        android:text="问题类型:"
+        android:textColor="@color/color_black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/question_type_rec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_5">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+
+    <EditText
+        android:id="@+id/quest_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@null"
+        android:hint="问题简述"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/center_fragment" />
+
+    <EditText
+        android:id="@+id/quest_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请详细描述内容"
+        android:maxLines="20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@color/color_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.itboy.dj.examtool.modules.communion.photoshow.ImageShowPickerView
+            android:id="@+id/it_picker_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:is_show_del="true"
+            app:max_num="3"
+            app:pic_size="80dp">
+
+        </com.itboy.dj.examtool.modules.communion.photoshow.ImageShowPickerView>
+
+
+    </RelativeLayout>
+</LinearLayout>

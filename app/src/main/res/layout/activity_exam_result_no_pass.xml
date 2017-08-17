@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exam_result_no_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.exam.ExamResultNoPassActivity">
+
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/base_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qwe"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin_12">
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="答题用时："
+                android:textColor="#60C6AA" />
+
+            <TextView
+                android:id="@+id/answ_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/a"
+                android:text="00:00"
+                android:textColor="#60C6AA" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin_12">
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="得分详情："
+                android:textColor="#60C6AA" />
+
+            <TextView
+                android:id="@+id/score_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/detail"
+                android:text="单选00分,多选00分,判断00分"
+                android:textColor="#60C6AA" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_40">
+            <!--ic_sorry-->
+            <TextView
+                android:id="@+id/score_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/ic_sorry" />
+
+            <!--android:layout_marginTop="20dp"-->
+            <RelativeLayout
+                android:id="@+id/score_rt"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/fen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:text="分"
+                    android:textColor="@color/color_white" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_alignBaseline="@+id/fen"
+                    android:layout_alignBottom="@+id/fen"
+                    android:layout_centerHorizontal="true"
+                    android:text="56"
+                    android:textColor="@color/color_white"
+                    android:textSize="64sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pass_or_lose_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="抱歉，你没有通过木工高级工理论考试"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <!--实操的时候显示-->
+        <TextView
+            android:id="@+id/hand_bless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_12"
+            android:text="实操考试希望继续努力"
+            android:textColor="@color/exam_choose_color"
+            android:textSize="15dp"
+            android:visibility="gone" />
+        <!--实操的时候隐藏-->
+        <RelativeLayout
+            android:id="@+id/look_error_rt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50">
+
+            <TextView
+                android:id="@+id/look_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="查看错题"
+                android:textColor="#E88DA4"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_12"
+                android:layout_toLeftOf="@id/look_error"
+                android:background="#668FB4" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_toRightOf="@id/look_error"
+                android:background="#668FB4" />
+        </RelativeLayout>
+
+
+        <!--实操的布局 ,默认隐藏-->
+        <RelativeLayout
+            android:id="@+id/hand_rt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginTop="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/handm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实操考试时间："
+                android:textColor="#6389AF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hand_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/handm"
+                android:text="2017-05-01  上午9:00"
+                android:textColor="#6389AF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/handad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/handm"
+                android:layout_marginTop="10dp"
+                android:text="实操考试场地："
+
+                android:textColor="#6389AF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hand_adr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/handm"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/handad"
+                android:text="北京市大兴区职业培训xxx学校"
+                android:textColor="#6389AF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/is_rember"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_50"
+            android:background="@drawable/next_step_shape"
+            android:text="我记住了"
+            android:textColor="@color/color_white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <!--当有实际操作时，隐藏下面布局-->
+    <RelativeLayout
+        android:id="@+id/when_hand_hide_rt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_70">
+
+        <Button
+            android:id="@+id/to_study"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/next_step_shape"
+            android:text="去学习"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/study_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="去学习木工高级理论考试"
+            android:textColor="#E88DA4" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

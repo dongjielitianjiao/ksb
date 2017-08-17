@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_legal_light_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.legalprotect.LegalLightProjectActivity">
+
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/base_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/i_legalright_zixun"
+        android:textColor="@color/color_white"
+        android:text="我要维权/资讯"
+        android:background="@color/apptheme1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50" />
+
+    <com.itboy.dj.examtool.widget.tabContainer.TabContainerView1
+        android:layout_below="@id/qwe"
+        android:layout_above="@id/i_legalright_zixun"
+        android:id="@+id/megame_bot_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:divideLineColor="@color/color_white"
+        app:divideLineHeight="0"
+        app:isTop="true"
+        app:selectedTextColor="#454545"
+        app:textColor="#454545"
+        app:textSize="15sp">
+
+
+    </com.itboy.dj.examtool.widget.tabContainer.TabContainerView1>
+
+</RelativeLayout>

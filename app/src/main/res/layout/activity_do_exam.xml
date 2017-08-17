@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_do_exam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.DoExamActivity">
+    <!--顶部-->
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+        <!--返回键-->
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+        </RelativeLayout>
+
+        <!--中间部分-->
+        <RelativeLayout
+            android:id="@+id/choose_test_rt"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/e_ic_liebiao" />
+
+            <TextView
+                android:id="@+id/exam_which"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_toRightOf="@id/q"
+                android:gravity="center"
+
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/margin_15" />
+
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/exam_which"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@color/color_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/exam_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/w"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/margin_15" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--内容部分的容器-->
+
+
+    <!--底部-->
+    <RelativeLayout
+        android:id="@+id/qwee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/apptheme1">
+
+            <TextView
+                android:id="@+id/time_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@mipmap/e_ic_shijian" />
+
+            <TextView
+                android:id="@+id/time_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginRight="@dimen/margin_12"
+                android:layout_toRightOf="@id/time_img"
+                android:text="58:56"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/submit_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_12"
+                android:layout_toRightOf="@id/time_show"
+                android:background="#083D6F"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:text="立即交卷"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_15" />
+
+        </RelativeLayout>
+
+
+        <!--底部右边-->
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/left"
+            android:background="#00A77C"
+            android:text="下一题"
+            android:textColor="@color/color_white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/qwe"
+        android:layout_above="@id/qwee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.me.personal.PersonalActivity">
+    <RelativeLayout
+        android:background="@color/apptheme1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/c_ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18"
+            android:text="@string/person_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head_img_rt"
+        style="@style/me_person_msg">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/head_tx" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            style="@style/me_list_item_img_sty" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head_img"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_18"
+            android:layout_toLeftOf="@id/arrow"
+            android:src="@mipmap/b_bg"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_name_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/nick_name"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/arrow1"
+            style="@style/me_list_item_img_sty" />
+
+        <TextView
+            android:id="@+id/nick_name_show"
+            style="@style/me_list_item_tv_sty"
+            android:layout_marginRight="12dp"
+            android:hint="昵称"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toLeftOf="@+id/arrow1"
+            android:layout_toStartOf="@+id/arrow1"
+            android:layout_marginEnd="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/is_on_work" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="@dimen/margin_100"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/work_yes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/workstatus"
+                android:button="@null"
+
+                android:gravity="center"
+                android:text="是"
+                android:textColor="@color/workstatus_tx_color" />
+
+            <RadioButton
+                android:id="@+id/work_no"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/workstatus"
+                android:button="@null"
+                android:gravity="center"
+                android:text="否"
+                android:textColor="@color/workstatus_tx_color" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profession_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/change_profession" />
+
+        <ImageView
+            android:id="@+id/arrow2"
+            style="@style/me_list_item_img_sty" />
+
+
+        <TextView
+            android:id="@+id/profession_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toLeftOf="@id/arrow2"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:hint="职业"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/work_address_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/work_add" />
+
+        <ImageView
+            android:id="@+id/arrow3"
+            style="@style/me_list_item_img_sty" />
+
+        <TextView
+            android:id="@+id/work_address_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toLeftOf="@id/arrow3"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:hint="地址"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/me_phone" />
+
+        <ImageView
+            android:id="@+id/arrow4"
+            style="@style/me_list_item_img_sty" />
+
+        <TextView
+            android:id="@+id/me_phone_show"
+            style="@style/me_list_item_tv_sty"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toLeftOf="@id/arrow4"
+            android:hint="电话"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/me_id_card" />
+
+        <TextView
+            android:id="@+id/id_card_show"
+            style="@style/me_list_item_tv_sty"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_30"
+            android:hint="身份证"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invite_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/input_invite_code" />
+
+        <ImageView
+            android:id="@+id/arrow5"
+            style="@style/me_list_item_img_sty" />
+
+        <TextView
+            android:id="@+id/command_person_phone_tx_show"
+            style="@style/me_list_item_tv_sty"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toLeftOf="@id/arrow5"
+            android:hint="邀请码"
+            android:maxLines="1" />
+    </RelativeLayout>
+</LinearLayout>

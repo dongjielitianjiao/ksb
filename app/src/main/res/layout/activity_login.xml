@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/b_bg"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_50"
+        android:background="@mipmap/ic_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_30">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/phone_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:src="@mipmap/b_ic_yonghumin" />
+
+            <EditText
+                android:id="@+id/login_input_phone"
+                style="@style/user_pwd"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_toRightOf="@id/phone_img"
+                android:hint="@string/user_name" />
+            <TextView
+                android:background="@color/barcolor"
+                android:layout_below="@id/login_input_phone"
+                android:layout_width="match_parent"
+               android:layout_alignLeft="@id/login_input_phone"
+                android:layout_height="1dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="@dimen/margin_60"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/phone_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:src="@mipmap/b_ic_mima" />
+
+            <EditText
+                android:id="@+id/login_input_pwd"
+                style="@style/user_pwd"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_toRightOf="@id/phone_img1"
+                android:hint="@string/user_pwd" />
+            <TextView
+                android:background="@color/barcolor"
+                android:layout_below="@id/login_input_pwd"
+                android:layout_width="match_parent"
+                android:layout_alignLeft="@id/login_input_pwd"
+                android:layout_height="1dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+<!---->
+    <!--登录-->
+    <carbon.widget.Button
+        app:carbon_rippleColor="#687E98"
+        app:carbon_cornerRadius="30dp"
+        android:id="@+id/login"
+        android:layout_width="@dimen/margin_225"
+        android:layout_height="@dimen/margin_40"
+        android:layout_gravity="center"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/login_shape"
+        android:text="@string/login"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/color_white" />
+
+    <!--免费注册&找回密码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="17dp">
+
+        <View
+            android:id="@+id/cut_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_gray" />
+
+        <TextView
+            android:id="@+id/login_to_regist"
+            style="@style/regist_fdpwd"
+            android:layout_marginRight="@dimen/margin_9"
+            android:layout_toLeftOf="@id/cut_line"
+            android:text="@string/login_to_regist" />
+
+        <TextView
+            android:id="@+id/login_to_findpwd"
+            style="@style/regist_fdpwd"
+            android:layout_marginLeft="@dimen/margin_9"
+            android:text="@string/login_find_pwd"
+            android:layout_toRightOf="@+id/cut_line"
+            />
+    </RelativeLayout>
+</LinearLayout>

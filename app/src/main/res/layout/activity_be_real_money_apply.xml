@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_be_real_money_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itboy.dj.examtool.modules.me.BeRealMoneyApplyActivity">
+
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:text="提现申请"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/b"
+        style="@style/me_list_item_rt_sty"
+        android:layout_below="@id/qwe">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="提现金额"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/money_num"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@id/a"
+            android:background="@null"
+            android:textColor="#DF6184" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/c"
+        style="@style/me_list_item_rt_sty"
+        android:layout_below="@id/b"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/user_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:background="@null"
+            android:hint="输入户名"
+            android:textColor="#DF6184" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/d"
+        style="@style/me_list_item_rt_sty"
+        android:layout_below="@id/c"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/open_bank_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:background="@null"
+            android:hint="输入开行号"
+            android:textColor="#DF6184" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_list_item_rt_sty"
+        android:layout_below="@id/d"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/bank_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:background="@null"
+            android:hint="输入银行卡号"
+            android:textColor="#DF6184" />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/apply_btn"
+        android:layout_width="240dp"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:textColor="@color/color_white"
+        android:layout_height="wrap_content"
+        android:background="@drawable/next_step_shape"
+        android:text="提交申请"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>

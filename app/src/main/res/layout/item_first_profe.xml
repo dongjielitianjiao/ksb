@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="2dp"
+    android:background="@color/color_white"
+    android:layout_marginLeft="2dp"
+    android:gravity="center"
+    android:layout_marginBottom="2dp"
+    android:layout_height="40dp">
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sales_tx"
+        android:background="@drawable/ft_pro_first"
+        android:textColor="@color/test_selector_tv_color"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:duplicateParentState="true"
+        android:gravity="center"
+
+        android:textSize="14sp">
+    </TextView>
+
+
+</RelativeLayout>

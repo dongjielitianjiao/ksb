@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_night_school"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.NightSchool.NightSchoolActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="#094B87"
+        >
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+
+        <RadioGroup
+            android:id="@+id/commun_radio"
+            android:layout_width="140dp"
+            android:layout_height="@dimen/margin_30"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/left_radio_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_radio_btn_select"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="在线学习"
+                android:textColor="@color/radio_select_tx_color" />
+
+            <RadioButton
+                android:id="@+id/right_radio_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_radio_btn_select"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="夜校学习"
+                android:textColor="@color/radio_select_tx_color1" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/night_study_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout" />
+</LinearLayout>

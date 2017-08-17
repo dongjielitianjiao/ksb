@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cf_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.me.CfDetailActivity">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="订单号：1234612121111"
+            android:textColor="#464646"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_12"
+            android:text="待签收"
+            android:textColor="#EC4B4B"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@drawable/rect_cf_detail" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:src="@mipmap/a_ic_bisaididian" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="@dimen/margin_2"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/img"
+            android:background="@color/color_black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_toRightOf="@id/line">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:text="颜虎"
+                android:textColor="#464646"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_toRightOf="@id/name"
+                android:text="1300000000"
+                android:textColor="#464646"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:text="北京市天安门广场110号"
+                android:textColor="#464646"
+                android:textSize="@dimen/text_size_15" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@drawable/rect_cf_detail" />
+
+    <include layout="@layout/item_cf_layout" />
+
+
+</LinearLayout>

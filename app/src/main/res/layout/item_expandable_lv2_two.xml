@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/item_bg"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ln_back"
+        android:background="@drawable/ft_pro_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/two_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="21dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_666"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/two_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="21dp"
+
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_666"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/two_start_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_666"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/two_duixiang"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_666"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/two_train_adr"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_666"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

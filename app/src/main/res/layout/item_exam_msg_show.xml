@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--第二部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_24"
+        android:layout_marginRight="@dimen/margin_24"
+        android:background="@drawable/rect_exam_msg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exam_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:gravity="center"
+            android:text="木工高级工理论考试试卷"
+            android:textColor="@color/apptheme1"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+        <TextView
+            android:background="@color/center_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!--考试题型-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40">
+            <TextView
+                style="@style/exam_detail_left"
+                android:text="考试题型" />
+            <TextView
+                android:id="@+id/exam_type"
+                android:text="单选丶多选丶判断"
+                style="@style/exam_detail_right"
+                />
+        </RelativeLayout>
+        <TextView
+            android:background="@color/center_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!--考试题目-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40">
+            <TextView
+                style="@style/exam_detail_left"
+                android:text="考试题目" />
+            <TextView
+                android:id="@+id/exam_name"
+                android:text="20道题 每道5分"
+                style="@style/exam_detail_right"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:background="@color/center_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!--合格标准-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40">
+            <TextView
+                style="@style/exam_detail_left"
+                android:text="合格标准" />
+            <TextView
+                android:id="@+id/exam_pass"
+                android:text="60分合格"
+                style="@style/exam_detail_right"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:background="@color/center_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!--考试时间-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40">
+            <TextView
+                style="@style/exam_detail_left"
+                android:text="考试时间" />
+            <TextView
+                android:id="@+id/exam_time"
+                android:text="60分钟"
+                style="@style/exam_detail_right"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:background="@color/center_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!--上次成绩-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40">
+            <TextView
+                style="@style/exam_detail_left"
+                android:text="上次成绩" />
+            <TextView
+                android:id="@+id/exam_last_score"
+                android:text="58分"
+                style="@style/exam_detail_right"
+                />
+        </RelativeLayout>
+        <TextView
+            android:background="@color/center_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_55">
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/start_do_exam"
+                android:layout_width="240dp"
+                android:textColor="@color/color_white"
+                android:layout_height="40dp"
+                android:background="@drawable/next_step_shape"
+                android:text="开始答题"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

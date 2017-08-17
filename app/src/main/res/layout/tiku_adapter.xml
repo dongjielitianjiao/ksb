@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center">
+
+    <com.itboy.dj.examtool.widget.MyGridView
+        android:id="@+id/content_exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:numColumns="6"></com.itboy.dj.examtool.widget.MyGridView>
+
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/content_exam"
+        android:background="@color/color_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:textColor="@color/color_gray" />
+
+        <TextView
+            android:id="@+id/weidaimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@mipmap/e_ic_weida" />
+
+        <TextView
+            android:id="@+id/weidai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toLeftOf="@+id/weidaimg"
+            android:text="未答"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yidaimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/weidai"
+            android:background="@mipmap/e_ic_yida" />
+
+        <TextView
+            android:id="@+id/yida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toLeftOf="@+id/yidaimg"
+            android:text="已答"
+            android:textColor="#00A77C"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rt"
+        android:background="#33111111" />
+
+</RelativeLayout>

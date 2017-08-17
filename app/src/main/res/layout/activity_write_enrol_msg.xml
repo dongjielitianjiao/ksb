@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_write_enrol_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.apply.WriteEnrolMsgActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@color/apptheme1">
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:src="@mipmap/c_ic_back" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/base_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/right_rt"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/base_img_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--内容部分-->
+
+<ScrollView
+    android:layout_above="@+id/qwee"
+    android:layout_below="@id/qwe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/me_list_item_rt_sty">
+
+            <EditText
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:id="@+id/wt_your_real_name"
+                style="@style/me_list_item_tv_sty"
+                android:hint="填写您的真实姓名" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/me_list_item_rt_sty">
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:id="@+id/wt_your_phone"
+                style="@style/me_list_item_tv_sty"
+                android:hint="填写您的手机号" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/study_rt"
+            style="@style/me_list_item_rt_sty">
+            <TextView
+                style="@style/me_list_item_tv_sty"
+                android:text="课程信息" />
+        </RelativeLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/color_white"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/two_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="21dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_666"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/two_time_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="21dp"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_666"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/two_start_end_time_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_666"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/two_duixiang_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_666"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/two_train_adr_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_666"
+                android:textSize="@dimen/text_size_15" />
+
+            <!--方格列表-->
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/rec_table"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/qwee"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/color_white"
+        android:gravity="center">
+        <Button
+            android:id="@+id/apply_right_now"
+            android:layout_width="240dp"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_step_shape"
+            android:text="立即报名"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

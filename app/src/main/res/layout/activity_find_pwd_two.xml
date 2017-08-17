@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_find_pwd_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/b_bg"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.findpwd.FindPwdTwoActivity">
+    <TextView
+        android:gravity="center"
+        android:text="找回密码"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_60"
+        android:background="@drawable/login_one_shape"
+        android:layout_width="@dimen/margin_300"
+        android:layout_height="@dimen/margin_60"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/fpwd_set_pwd"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@null"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:hint="请重新设置密码"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:background="@color/barcolor"
+        android:layout_width="@dimen/margin_300"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:background="@drawable/login_three_shape"
+        android:layout_width="@dimen/margin_300"
+        android:layout_height="@dimen/margin_60"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/findpwd_sure_pwd"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@null"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:hint="请再次输入密码"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>
+
+    <carbon.widget.Button
+        android:id="@+id/findpwd_set_pwd_ok"
+        app:carbon_rippleColor="#687E98"
+        app:carbon_cornerRadius="30dp"
+        android:layout_width="@dimen/margin_225"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_80"
+        android:background="@drawable/login_shape"
+        android:text="@string/next_step"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_15" />
+</LinearLayout>

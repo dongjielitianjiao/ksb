@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="40dp">
+<TextView
+    android:id="@+id/forum_tyep_choose_text"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin_5"
+    android:background="@drawable/rectrg_normal"
+    android:text="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</RelativeLayout>

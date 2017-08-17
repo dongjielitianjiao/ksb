@@ -1,0 +1,283 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--系统栏颜色-->
+        <item name="colorPrimaryDark">@color/apptheme1</item>
+        <!-- 输入Edittext颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--照片选择弹起框仿iOS7-->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+
+    <!--图片延伸到状态栏-->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!--系统栏颜色-->
+        <item name="colorPrimaryDark">@color/apptheme1</item>
+        <!-- 输入Edittext颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--系统栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 输入Edittext颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--照片选择弹起框仿iOS7-->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <!--底部导航栏自定义属性-->
+    <declare-styleable name="LPageIndicator">
+        <attr name="icon_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="icon_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="in_padding" format="dimension" />
+        <attr name="in_paddingLeft" format="dimension" />
+        <attr name="in_paddingTop" format="dimension" />
+        <attr name="in_paddingRight" format="dimension" />
+        <attr name="in_paddingBottom" format="dimension" />
+        <attr name="icon_marginBottom" format="dimension" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color_nor" format="color" />
+        <attr name="text_color_foc" format="color" />
+    </declare-styleable>
+    <!--照片选择弹起框-->
+
+    <style name="ActionSheetStyleiOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+        <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+        <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+        <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+        <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+        <item name="cancelButtonTextColor">#1E82FF</item>
+        <item name="otherButtonTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">12sp</item>
+    </style>
+
+    <!--横线背景-->
+    <style name="on_dp_line">
+        <item name="android:background">@color/color_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <!--注册&找回密码-->
+    <style name="regist_fdpwd">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--用户名和用户密码-->
+    <style name="user_pwd">
+
+        <item name="android:digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ
+        </item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_48</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColorHint">@color/color_white</item>
+    </style>
+    <!--个人中心-->
+
+    <style name="me_list_item_rt_sty">
+        <item name="android:layout_marginTop">@dimen/margin_6</item>
+        <item name="android:background">@drawable/me_item_list</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_45</item>
+    </style>
+
+
+    <style name="me_list_item_tv_sty">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:layout_marginLeft">@dimen/margin_10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="me_list_item_img_sty">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_20</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@mipmap/i_ic_youjiantou</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--个人信息界面-->
+    <style name="me_person_msg">
+        <item name="android:layout_marginTop">@dimen/margin_3</item>
+        <item name="android:background">@drawable/me_item_list</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_90</item>
+    </style>
+
+    <!--/去掉dialog自己的白色背景-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <!--考试科目详情-->
+    <style name="exam_detail_left">
+        <item name="android:layout_marginLeft">@dimen/margin_5</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/dark_666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="exam_detail_right">
+        <item name="android:layout_marginRight">@dimen/margin_5</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/dark_666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <!--空数据界面和错误界面-->
+    <style name="bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#F0F0F0</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="empty_img">
+        <item name="android:layout_width">@dimen/def_height</item>
+        <item name="android:layout_height">@dimen/def_height</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+
+    <!--选择本地图片或者视频-->
+    <style name="MediaPickerTheme" parent="Theme.AppCompat">
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionMenuTextColor">@color/picker_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:divider">@android:color/white</item>
+    </style>
+
+
+
+    <!--   <style name="AppTheme.Default"/>
+
+    <style name="AppTheme.White">
+        <item name="gallery_toolbar_bg">@color/theme_white_primary</item>
+        <item name="gallery_toolbar_close_color">#2A2A2F</item>
+        <item name="gallery_toolbar_text_color">#2A2A2F</item>
+        <item name="gallery_page_bg">#FFFFFF</item>
+        <item name="gallery_default_image">@mipmap/ic_launcher</item>
+        <item name="gallery_imageview_bg">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.Blue">
+        <item name="colorPrimary">@color/theme_blue_primary</item>
+        <item name="colorPrimaryDark">@color/theme_blue_dark</item>
+        <item name="colorAccent">@color/theme_blue_accent</item>
+        <item name="colorButtonNormal">@color/theme_blue_accent</item>
+    </style>
+
+    <style name="AppTheme.Orange">
+        <item name="colorPrimary">@color/theme_orange_primary</item>
+        <item name="colorPrimaryDark">@color/theme_orange_dark</item>
+        <item name="colorAccent">@color/theme_light_blue_accent</item>
+    </style>
+
+    <style name="AppTheme.Cyan">
+        <item name="colorPrimary">@color/theme_cyan_primary</item>
+        <item name="colorPrimaryDark">@color/theme_cyan_dark</item>
+        <item name="colorAccent">@color/theme_cyan_accent</item>
+    </style>
+
+    <style name="AppTheme.Green">
+        <item name="colorPrimary">@color/theme_green_primary</item>
+        <item name="colorPrimaryDark">@color/theme_green_dark</item>
+        <item name="colorAccent">@color/theme_green_accent</item>
+    </style>
+
+    <style name="AppTheme.Teal">
+        <item name="colorPrimary">@color/theme_teal_primary</item>
+        <item name="colorPrimaryDark">@color/theme_teal_dark</item>
+        <item name="colorAccent">@color/theme_teal_accent</item>
+    </style>
+
+    <style name="AppTheme.Red">
+        <item name="colorPrimary">@color/theme_red_primary</item>
+        <item name="colorPrimaryDark">@color/theme_red_dark</item>
+        <item name="colorAccent">@color/theme_red_accent</item>
+    </style>
+
+    <style name="AppTheme.Pink">
+        <item name="colorPrimary">@color/theme_pink_primary</item>
+        <item name="colorPrimaryDark">@color/theme_pink_dark</item>
+        <item name="colorAccent">@color/theme_pink_accent</item>
+    </style>
+
+    <style name="AppTheme.Purple">
+        <item name="colorPrimary">@color/theme_purple_primary</item>
+        <item name="colorPrimaryDark">@color/theme_purple_dark</item>
+        <item name="colorAccent">@color/theme_purple_accent</item>
+    </style>
+
+    <style name="AppTheme.Grey">
+        <item name="colorPrimary">@color/theme_grey_primary</item>
+        <item name="colorPrimaryDark">@color/theme_grey_dark</item>
+        <item name="colorAccent">@color/theme_grey_accent</item>
+    </style>
+
+    <style name="AppTheme.Black">
+        <item name="colorPrimary">@color/theme_black_primary</item>
+        <item name="colorPrimaryDark">@color/theme_black_dark</item>
+        <item name="colorAccent">@color/theme_black_accent</item>
+    </style>
+
+    <style name="AppTheme.Brown">
+        <item name="colorPrimary">@color/theme_brown_primary</item>
+        <item name="colorPrimaryDark">@color/theme_brown_dark</item>
+        <item name="colorAccent">@color/theme_brown_dark</item>
+    </style>-->
+
+</resources>

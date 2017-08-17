@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_real_name_rz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.me.personal.RealNameRZActivity">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:background="@drawable/me_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <EditText
+            android:id="@+id/real_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写您的真实姓名"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/me_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <EditText
+            android:id="@+id/real_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:background="@null"
+            android:hint="填写您的身份证号"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/me_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <com.dl7.tag.TagView
+            android:id="@+id/tag_skip"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:text="获取验证码"
+            android:textSize="@dimen/text_size_13"
+            app:tag_auto_check="false"
+            app:tag_bg_color="#094B87"
+            app:tag_mode="normal"
+            app:tag_shape="arc"
+            app:tag_text_color="@color/color_white" />
+
+        <EditText
+            android:id="@+id/real_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@id/tag_skip"
+            android:background="@null"
+            android:hint="填写您的手机号"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:numeric="integer"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/me_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <EditText
+            android:id="@+id/real_yz_code"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写您收到的验证码"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="240dp"
+        android:layout_marginTop="@dimen/margin_200"
+        android:textColor="@color/color_white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/next_step_shape"
+        android:text="完成"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</LinearLayout>

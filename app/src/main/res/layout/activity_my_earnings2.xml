@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_earnings2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.me.MyEarnings2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_200"
+        android:background="@mipmap/l_bg_wodeshouyi"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/qwe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50">
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:src="@mipmap/c_ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="我的收益"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/right_rt"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/base_img_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_2"
+                    android:src="@mipmap/e_ic_shijian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_2"
+                    android:layout_toRightOf="@id/base_img_bg"
+                    android:text="记录"
+                    android:textColor="@color/color_white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp">
+            <!--1-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/me_head_img"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_38"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/b_bg"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp" />
+
+            <!--2-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_120"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_toRightOf="@id/me_head_img">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/a"
+                        android:layout_width="5dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_above="@id/a">
+
+                        <TextView
+                            android:id="@+id/me_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="奋斗的小董"
+                            android:textColor="@color/color_white"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/a">
+
+                        <TextView
+                            android:id="@+id/all_earn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="账户总收益："
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <carbon.widget.TextView
+                            android:id="@+id/me_earn_all_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@id/all_earn"
+                            android:gravity="center"
+                            android:text="000元"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_size_13"
+                            app:carbon_cornerRadius="6dp" />
+
+
+                    </RelativeLayout>
+
+                    <!-- 提现-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/show">
+
+                        <Button
+                            android:id="@+id/to_be_real_mongy"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_12"
+                            android:background="@drawable/rectrg"
+                            android:text="提现"
+                            android:textColor="@color/color_white" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/to_be_real_mongy"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/margin_5">
+
+                            <TextView
+                                android:id="@+id/tixian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="可提现："
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/text_size_15" />
+
+                            <carbon.widget.TextView
+                                android:id="@+id/tixian_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@id/tixian"
+                                android:gravity="center"
+                                android:text="000元"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/text_size_13"
+                                app:carbon_cornerRadius="6dp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:text="用户ID" />
+        <TextView
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_12"
+            android:text="收益金额" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_money_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

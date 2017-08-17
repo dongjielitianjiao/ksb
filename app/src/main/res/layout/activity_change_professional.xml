@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_professional"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.itboy.dj.examtool.modules.me.personal.ChangeProfessionalActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@color/apptheme1">
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:src="@mipmap/c_ic_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/base_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/right_rt"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/base_img_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/qwee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/qwe">
+
+        <LinearLayout
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_10"
+                android:text="选择所属专业" />
+
+            <com.itboy.dj.examtool.widget.MyGridView
+                android:id="@+id/first_profess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp"
+                android:choiceMode="singleChoice"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:numColumns="4"></com.itboy.dj.examtool.widget.MyGridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_10"
+                android:text="选择职业" />
+
+            <com.itboy.dj.examtool.widget.MyGridView
+                android:id="@+id/second_profess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp"
+                android:choiceMode="singleChoice"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:numColumns="4"></com.itboy.dj.examtool.widget.MyGridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_10"
+                android:text="选择工种" />
+
+            <com.itboy.dj.examtool.widget.MyGridView
+                android:id="@+id/third_profess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp"
+                android:choiceMode="singleChoice"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:numColumns="4"></com.itboy.dj.examtool.widget.MyGridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_10"
+                android:text="选择等级" />
+
+            <com.itboy.dj.examtool.widget.MyGridView
+                android:id="@+id/four_profess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp"
+                android:choiceMode="singleChoice"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:numColumns="4"></com.itboy.dj.examtool.widget.MyGridView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/qwee"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="240dp"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_step_shape"
+            android:text="保存修改"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

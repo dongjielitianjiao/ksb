@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+<TextView
+    android:textColor="@color/color_black"
+    android:text="用户ID"
+    android:gravity="center"
+    android:textSize="15sp"
+    android:layout_marginLeft="@dimen/margin_12"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+
+    <TextView
+        android:textColor="@color/color_black"
+        android:layout_alignParentRight="true"
+        android:text="收益金额"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginRight="@dimen/margin_12"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:background="#11bbbbbb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</RelativeLayout>

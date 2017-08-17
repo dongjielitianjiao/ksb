@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_get_certif_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.ftpage.getcertificate.GetCertifStepOneActivity">
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cf_intoduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginTop="20dp"
+                android:text="你已获取中央颁发的全世界第二美的美少女认可证书，希望你继续努力，早日赶超颜虎"
+                android:textColor="#42709D"
+                android:textSize="@dimen/text_size_15" />
+
+
+            <com.baoyachi.stepview.HorizontalStepView
+                android:id="@+id/step_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_12"
+                android:background="@color/color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+
+                    android:text="姓名："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/cfr_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:layout_toRightOf="@id/name"
+
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50">
+
+                <TextView
+                    android:id="@+id/card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+
+                    android:text="身份证号："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/cfr_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:layout_toRightOf="@id/card"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+
+                    android:text="电话号码："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/cfr_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:layout_toRightOf="@id/phone"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+
+                    android:text="邮箱地址："
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/cfr_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:layout_toRightOf="@id/email"
+
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tx"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:text="证件照（2寸照）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <com.itboy.dj.examtool.modules.communion.photoshow.ImageShowPickerView
+                    android:id="@+id/it_picker_view"
+                    android:layout_below="@id/tx"
+                    android:layout_marginLeft="@dimen/margin_12"
+
+                    app:is_show_del="true"
+                    app:pic_size="80dp"
+                    app:max_num="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></com.itboy.dj.examtool.modules.communion.photoshow.ImageShowPickerView>
+
+                <TextView
+                    android:id="@+id/tx1"
+                    android:layout_below="@id/it_picker_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_marginTop="20dp"
+                    android:text="注:请确保信息的准确性,如因信息填写错误,未收到证书或证书信息不符,概不负责！"
+                    android:textColor="#E26386"
+                    android:textSize="@dimen/text_size_13" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/getcf_next_one"
+                android:layout_width="240dp"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_gravity="center"
+                android:textColor="@color/color_white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_step_shape"
+                android:text="下一步"
+                android:layout_centerHorizontal="true"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

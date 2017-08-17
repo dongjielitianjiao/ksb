@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/msg_head_img"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/i_ic_wuliutongzhi"
+
+      />
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_toRightOf="@id/msg_head_img">
+
+        <TextView
+            android:id="@+id/msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的证书已发货"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msg_title"
+            android:text="好证书，准备接收你的证书吧！"
+            android:textColor="@color/personal"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/msg_time"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_alignParentRight="true"
+            android:text="2012-12-07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

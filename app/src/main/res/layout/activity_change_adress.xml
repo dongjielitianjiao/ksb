@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_adress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itboy.dj.examtool.modules.me.personal.ChangeAdressActivity">
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/base_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/qwe"
+        android:id="@+id/choose_address"
+        style="@style/me_list_item_rt_sty">
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="选择所在地区" />
+
+        <ImageView
+            android:id="@+id/arrow1"
+            style="@style/me_list_item_img_sty" />
+
+        <TextView
+            android:id="@+id/show_address"
+            style="@style/me_list_item_tv_sty"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toLeftOf="@id/arrow1"
+            android:hint="请选择" />
+    </RelativeLayout>
+
+
+   <EditText
+       android:id="@+id/detail_adr"
+       android:layout_below="@id/choose_address"
+       android:layout_marginTop="@dimen/margin_10"
+       android:gravity="top"
+       android:paddingLeft="@dimen/margin_10"
+       android:paddingTop="@dimen/margin_10"
+       android:hint="请填写您的详细工作地址"
+       android:background="@drawable/me_item_list"
+       android:layout_width="match_parent"
+       android:layout_height="120dp" />
+    <Button
+        android:id="@+id/complete_adr"
+        android:layout_width="240dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/color_white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/next_step_shape"
+        android:text="完成"
+      android:layout_marginBottom="@dimen/margin_30"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

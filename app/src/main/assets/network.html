@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/H-ui.reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/tongyong.css"/>
+</head>
+<style>
+    body{
+        background-color:#fbf9f9;
+    }
+    .img{
+        text-align:center;
+        margin-top:10rem;
+    }
+    .img img{
+        display: inline-block;
+        width:10rem;
+    }
+    .p1{
+        font-size:1.7rem;
+        color:#666;
+        text-align:center;
+        margin-top:1.5rem;
+    }
+    .p2{
+        font-size:1.4rem;
+        color:#999;
+        text-align:center;
+    }
+    .jiazia{
+        margin-top:1.5rem;
+    }
+    .jiazia p{
+        width:11.4rem;
+        height:3rem;
+        text-align:center;
+        line-height:3rem;
+        font-size:1.4rem;
+        color:#666;
+        margin:0 auto;
+        border:1px solid #999;
+        border-radius:2px;
+    }
+    .jiazia p a{
+        color:#666;
+        text-decoration:none;
+    }
+    .clicked{
+        background-color:#ccc;
+    }
+
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="img col-xs-12">
+            <img class="img-responsive" src="images/wuwang.png">
+        </div>
+        <p class="col-xs-12 p1">亲，您的手机网络不太顺畅喔~</p>
+        <p class="col-xs-12 p2">请检查你的手机是否联网</p>
+        <div class="col-xs-12 jiazia">
+           <!-- <p id="bTn"><a href="javascript:void(0)">重新加载</a></p>-->
+            <p id="bTn"><a  class="reload">重新加载</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+
+    function refresh(){
+        //var bTn=document.getElementById("bTn");
+        //bTn.style.backgroundColor="#ccc";
+        Android.reload();
+    }
+
+    $(function(){
+        $("#bTn").click(function() {
+            //window.location.reload();
+            $(this).addClass("clicked");
+            setTimeout(function(){
+                $("#bTn").removeClass("clicked");
+            },100);
+
+        })
+        $('.reload').click(function(){
+            refresh();
+            //return false;
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invite_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.itboy.dj.examtool.modules.me.personal.InviteCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="填写邀请码"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/c"
+        style="@style/me_list_item_rt_sty"
+        android:layout_below="@id/qwe"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/write_command_person_invite_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:background="@null"
+            android:hint="请填写推荐人邀请码"
+            android:textColor="#DF6184" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:background="@drawable/next_step_shape"
+        android:text="提交"
+        android:textColor="@color/color_white" />
+
+
+</RelativeLayout>

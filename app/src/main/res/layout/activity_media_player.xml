@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_media_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itboy.dj.examtool.playvideo.MediaPlayerActivity">
+    <Button
+        android:id="@+id/to_do_exam"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/apptheme1"
+        android:text="完成课程，点此进行考试吧"
+        android:textColor="@color/color_white" />
+
+
+    <com.itboy.dj.examtool.playvideo.LandLayoutVideo
+        android:id="@+id/detail_player"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/post_media_height"
+        ></com.itboy.dj.examtool.playvideo.LandLayoutVideo>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_above="@id/to_do_exam"
+        android:layout_below="@id/detail_player"
+        android:id="@+id/post_detail_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.itboy.dj.examtool.widget.tabContainer.TabContainerView1
+                android:id="@+id/media_bot_table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:divideLineColor="@color/color_white"
+                app:divideLineHeight="0"
+                app:isTop="true"
+                app:selectedTextColor="#454545"
+                app:textColor="#454545"
+                app:textSize="15sp"></com.itboy.dj.examtool.widget.tabContainer.TabContainerView1>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>

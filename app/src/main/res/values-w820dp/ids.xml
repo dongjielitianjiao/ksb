@@ -1,0 +1,28 @@
+<resources>
+    <item name="linearlayout_tab" type="id" />
+    <item name="viewpager_tab" type="id" />
+    <item name="divide_tab" type="id" />
+
+    <!--选择图片或者视频-->
+    <item name="take_photo" type="id"/>
+    <item name="take_video" type="id"/>
+    <item name="done" type="id"/>
+    <item name="media_switcher" type="id"/>
+    <item name="container" type="id"/>
+    <item name="rotate_left" type="id"/>
+    <item name="rotate_right" type="id"/>
+    <item name="save" type="id"/>
+    <item name="cancel" type="id"/>
+    <item name="crop" type="id"/>
+    <item name="grid" type="id"/>
+    <item name="no_data" type="id"/>
+    <item name="overlay" type="id"/>
+    <item name="thumbnail" type="id"/>
+
+
+    <!--仿微信展示-->
+
+    <item name="iv_image_show_picker_del" type="id" />
+    <item name="iv_image_show_picker_pic" type="id" />
+
+</resources>

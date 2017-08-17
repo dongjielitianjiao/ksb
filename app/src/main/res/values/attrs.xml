@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="EmptyLayout">
+        <attr name="background_color" format="color" />
+    </declare-styleable>
+
+
+    <!--自定义带进度条的progressbar-->
+    <!--自定义带进度的progressbar-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+
+    </declare-styleable>
+
+
+    <!--由于滑动table+fragment比较多，所以设置自定义tab-->
+    <declare-styleable name="TabContainerViewStyle">
+        <attr name="textSizeTab" format="dimension" />
+        <attr name="textColorTab" format="color" />
+        <attr name="isTop" format="boolean"/>
+        <attr name="selectedTextColor" format="color" />
+        <attr name="divideLineColor" format="color" />
+        <attr name="divideLineHeight" format="integer" />
+    </declare-styleable>
+    <!-- 小圆点样式 -->
+    <declare-styleable name="MessageCircleStyle">
+        <!-- 文本距离圆边的距离，没有文字的话可以通过它来控制圆的大小-->
+        <attr name="textSpacing" format="dimension" />
+        <attr name="cricleColor" format="color" />
+        <attr name="text" format="string" />
+        <attr name="messageTextSize" format="dimension" />
+        <attr name="messageTextColor" format="color" />
+    </declare-styleable>
+
+
+    //录制视频
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconMargin" format="dimension"/>
+    <attr name="iconSrc" format="reference"/>
+    <attr name="duration_max" format="integer"/>
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize"/>
+        <attr name="iconMargin"/>
+        <attr name="iconSrc"/>
+        <attr name="duration_max"/>
+    </declare-styleable>
+
+
+    <!--仿微信展示-->
+    <declare-styleable name="ImageShowPickerView">
+
+        <!-- 单张图片大小（宽高一样） -->
+        <attr name="pic_size" format="dimension" />
+        <!-- 最大数量 -->
+        <attr name="max_num" format="integer" />
+        <!-- 添加图片 -->
+        <attr name="add_label" format="reference" />
+        <!-- 删除图片 -->
+        <attr name="del_label" format="reference" />
+        <!-- 是否显示删除按钮-->
+        <attr name="is_show_del" format="boolean" />
+        <!-- 是否展示动画-->
+        <attr name="is_show_anim" format="boolean" />
+        <!-- 单行显示数量-->
+        <attr name="one_line_show_num" format="integer" />
+
+    </declare-styleable>
+
+</resources>

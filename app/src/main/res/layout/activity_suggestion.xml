@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_suggestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="com.itboy.dj.examtool.modules.me.SuggestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/qwe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/apptheme1">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@mipmap/c_ic_back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改昵称"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/qwe"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@drawable/me_item_list">
+
+        <EditText
+            android:id="@+id/suggest_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请提出您宝贵的意见或建议，谢谢"
+            android:paddingLeft="@dimen/margin_12"
+            android:paddingTop="@dimen/margin_12"
+            android:textColor="#DF6184" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c"
+        android:paddingLeft="@dimen/margin_6"
+        android:paddingTop="@dimen/margin_6"
+        android:paddingRight="@dimen/margin_6"
+        android:text="*请详细描述您遇到的问题,有助于我们快速定位并解决问题，或留下您的宝贵意见,我们会认真研究评估,以便为您提供更好的服务！" />
+
+
+    <Button
+        android:id="@+id/suggest_complete_btn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:background="@drawable/next_step_shape"
+        android:text="完成"
+        android:textColor="@color/color_white" />
+
+    <RelativeLayout
+        style="@style/me_list_item_rt_sty"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/t"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/email_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:background="@null"
+            android:hint="您的联系方式(电话丶QQ丶Email)"
+            android:maxLines="1"
+            android:textColor="#DF6184" />
+    </RelativeLayout>
+
+</RelativeLayout>

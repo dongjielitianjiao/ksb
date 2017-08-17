@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    tools:context="com.itboy.dj.examtool.modules.me.settings.SettingActivity">
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:id="@+id/set_cache_clear_rt"
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/clear_cache" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            style="@style/me_list_item_img_sty" />
+        <TextView
+            android:id="@+id/show_cache_tx"
+            android:layout_toLeftOf="@id/img"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_list_item_rt_sty">
+
+        <TextView
+            style="@style/me_list_item_tv_sty"
+            android:text="@string/msg_push" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="@dimen/margin_20"
+            android:checked="true"
+            app:kswBackDrawable="@drawable/miui_back_drawable"
+            app:kswThumbDrawable="@drawable/thumb_drawable" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

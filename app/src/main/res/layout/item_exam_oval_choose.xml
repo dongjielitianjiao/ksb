@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp">
+<TextView
+    android:id="@+id/exam_choose_text"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin_5"
+    android:background="@drawable/exam_choose_normal"
+    android:text="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</RelativeLayout>

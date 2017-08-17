@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">考试宝</string>
+    <!--table-->
+    <string name="ft_page">首页</string>
+    <string name="sec_study">学习</string>
+    <string name="thr_communion">交流</string>
+    <string name="four_me">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--登录注册-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_to_regist">免费注册</string>
+    <string name="login_find_pwd">找回密码</string>
+    <string name="user_name">请输入手机号/用户名</string>
+    <string name="user_pwd">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="regist_phone">请输入手机号</string>
+    <string name="regist_code">请输入验证码</string>
+    <string name="regist_invite_code">请输入邀请码（没有可跳过）</string>
+    <string name="next_step">下一步</string>
+    <string name="set_pwd">请设置密码</string>
+    <string name="regist_sure_pwd">请确认密码</string>
+    <string name="ft_bm">报名</string>
+    <string name="ft_study">学习</string>
+    <string name="ft_exam">考试</string>
+    <string name="ft_get_certificate">领证</string>
+    <string name="worker_school">工人夜校</string>
+    <string name="help_study">交流学习</string>
+    <string name="me_pool">我要维权</string>
+    <string name="invite_frid">邀请工友</string>
+    <string name="message">我的消息</string>
+    <string name="me_study">我的学习</string>
+    <string name="me_collect">我的收藏</string>
+    <string name="me_certificate">我的证书</string>
+    <string name="me_profit">我的收益</string>
+    <string name="service_center">客服中心</string>
+    <string name="me_ffback">意见反馈</string>
+    <string name="abt_examtool">关于考试宝</string>
+    <string name="head_tx">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="is_on_work">是否在职</string>
+    <string name="change_profession">变更职业</string>
+    <string name="work_add">工作地址</string>
+    <string name="me_phone">我的电话</string>
+    <string name="me_id_card">身份证</string>
+    <string name="input_invite_code">输入邀请码</string>
+    <string name="person_msg">个人信息</string>
+    <string name="set_msg">消息提醒模式</string>
+    <string name="new_msg">新消息通知</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="msg_push">接受消息推送</string>
+
+
+    <!--本地选择视频或者图片-->
+
+    <string name="waiting">Waiting&#8230;</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="ok">OK</string>
+    <string name="share">考试宝</string>
+
+      <string name="detail_text">我发斯蒂芬是打发阿斯蒂芬撒地我发斯蒂芬是打发阿斯蒂芬撒地方我打发阿斯
+        发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂打发阿斯蒂芬撒地方我蒂芬撒发
+        我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂撒地方芬是打发阿斯蒂打发阿斯蒂芬撒地方我撒地方我我蒂芬撒
+        芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒
+        地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地撒
+        撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是阿斯蒂芬撒地撒
+        打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打撒
+        发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿
+        芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方我发斯蒂芬是打发阿
+        发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂打发阿斯蒂芬撒地方我蒂芬撒发
+        我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂撒地方芬是打发阿斯蒂打发阿斯蒂芬撒地方我撒地方我我蒂芬撒
+        芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒
+        地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地撒
+        撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是阿斯蒂芬撒地撒
+        打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打撒
+        发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿
+        芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方我发斯蒂芬是打发阿
+        发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂打发阿斯蒂芬撒地方我蒂芬撒发
+        我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂撒地方芬是打发阿斯蒂打发阿斯蒂芬撒地方我撒地方我我蒂芬撒
+        芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒
+        地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地撒
+        撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是阿斯蒂芬撒地撒
+        打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打撒
+        发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿
+        芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方我发斯蒂芬是打发阿
+        发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂打发阿斯蒂芬撒地方我蒂芬撒发
+        我发斯蒂芬是打发阿斯蒂芬撒地方我发斯蒂撒地方芬是打发阿斯蒂打发阿斯蒂芬撒地方我撒地方我我蒂芬撒
+        芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒
+        地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地撒
+        撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是阿斯蒂芬撒地撒
+        打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打撒
+        发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿
+        芬撒地方方撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方撒地方我发斯蒂芬是打发阿
+        撒地方芬是打发阿斯蒂芬撒地方我发斯蒂芬是打发阿斯蒂芬撒地方方</string>
+
+</resources>
